@@ -1,0 +1,18 @@
+---
+
+import ProjectItem from "./ProjectItem.astro";
+import { projects } from "../data/Projects"
+
+---
+
+<ul class="grid grid-cols-1 items-center md:grid-cols-3 px-4">
+  {
+    projects.map(({  id, title, img, type,  }) => {
+      return (
+        <li>
+          <ProjectItem id={id} title={title} img={img} type={type} />
+        </li>
+      )
+    })
+  }
+</ul>

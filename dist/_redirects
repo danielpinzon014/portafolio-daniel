@@ -1,0 +1,5 @@
+/404         /.netlify/functions/entry    200
+/about       /.netlify/functions/entry    200
+/            /.netlify/functions/entry    200
+/:project    /.netlify/functions/entry    200
+/*           /.netlify/functions/entry    404
