@@ -36,4 +36,13 @@ export const projects = [
       tec:"Figma",
       url_project:"https://www.behance.net/gallery/159772095/Herencia-Neubrutalism"
     },
+    {
+      id:'CREINSER',
+      title: 'Fundación CREINSER',
+      img: "https://raw.githubusercontent.com/danielpinzon014/portafolio-daniel/main/public/Behance-tmb-creinser.webp",
+      description: 'This project is based on the design and construction of a web page for the CREINSER Foundation',
+      type:"Code",
+      tec:"WordPress",
+      url_project:"https://fundacioncreinser.com/"
+    },
   ]
