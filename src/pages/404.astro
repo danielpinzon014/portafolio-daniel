@@ -1,10 +1,12 @@
 ---
+import Header from "../components/header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="404, no lo he encontrado">
+  <Header/>
   <main class="max-w-4xl m-auto min-h-screen grid place-content-center text-center">
-    <h1 class="text-4xl font-black mb-4">Oh, vaya. ¡Lo has roto!</h1>
-    <img src="https://midu.dev/images/this-is-fine-404.gif" />
+    <h1 class="text-4xl font-black mb-4">Oh, fine, what you are looking for no longer exists</h1>
+    <img src="https://media.giphy.com/media/KdqIbjYYEvOxdWOblq/giphy.gif" />
   </main>
 </Layout>
