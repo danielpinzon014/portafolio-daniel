@@ -17,6 +17,15 @@ import Footer from '../components/Footer.astro';
 		<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/danielpinzon014/portafolio-daniel/main/public/favicon-96x96.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZTQ4641PP"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-SZTQ4641PP');
+                  </script>
 	</head>
 	<body class="bg-slate-50">
 		<div id="content">
