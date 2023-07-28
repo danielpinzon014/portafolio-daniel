@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { projects } from "../data/Projects";
+import Header_about from "../components/heade_about.astro";
+
+const { project } = Astro.params
+
+const info = projects.find(b => b.id === project)
+
+if (!info) {
+  return Astro.redirect("/404")
+}
+---
+
+<Layout title={`project ${info.id}`}>
+  <Header_about/>
+  <main class="mx-auto mt-[150px] max-w-4xl top-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 mt-4 md:mt-20 px-8">
+      <div class="flex flex-col mb-10">
+        <picture class="mb-8 w-full relative">
+          <img
+            class="h-full object-cover w-full max-w-full rounded"
+            src={info.img}
+            alt={`Portada del libro ${info.title}`}
+          />
+        </picture>
+
+        <a href={info.url_project} type="button" class="justify-center w-1/2 mb-3 text-white bg-red-700 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Click me for more information
+            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+
+      <aside class="mt-10 md:mt-0">
+        <h1 class="text-5xl font-black mb-4 underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-red-700">{info.title}</h1>
+        <p class="text-lg mb-4">{info.description}</p>
+        <a href="#" class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">{info.tec}</a>
+      </aside>
+    </div>
+    
+  </main>
+</Layout>
