@@ -45,4 +45,13 @@ export const projects = [
       tec:"WordPress",
       url_project:"https://fundacioncreinser.com/"
     },
+    {
+      id:'EL-LIBRO',
+      title: 'EL LIBRO 2024 - DAVIVIENDA',
+      img: "https://mir-s3-cdn-cf.behance.net/projects/808/1efea7181888891.Y3JvcCw4MDgsNjMyLDAsMA.png",
+      description: 'The first large project I did, EL BOOK, is a Banco Davivienda project, in which they analyze the panorama of the economy and investments and present their perspectives. For this project I helped in the creation of pieces for social networks, in the creation of the landing, together with a multidisciplinary team',
+      type:"Code/Desing",
+      tec:"HTML/CSS/Ps,Ai",
+      url_project:"https://www.behance.net/gallery/181888891/El-libro-2024-Banco-Davivienda"
+    },
   ]
