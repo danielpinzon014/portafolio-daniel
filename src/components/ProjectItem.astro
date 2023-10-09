@@ -1,5 +1,6 @@
 ---
 import { projects } from '../data/Projects';
+import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
   id:string;
@@ -12,10 +13,10 @@ const { id, title, img, type } = Astro.props;
 
 ---
 
-  <div class="w-full h-1/2 py-4 px-4 mx-auto max-w-screen-xl lg:py-4 hover:scale-105 transition duration-700 ease-in-out">
+  <div class="w-full h-1/2 py-4 px-4 mx-auto max-w-screen-xl lg:py-4 hover:scale-105  transition duration-700 ease-in-out">
     <div class="grid md:grid-cols-1 gap-4">
       <div
-        class="bg-gray-200 rounded-lg p-3 md:p-6 hover:bg-gray-100 shadow-lg"
+        class="bg-gray-200 rounded-lg p-3 md:p-6 hover:bg-gray-100  shadow-lg"
       >
       <a href="#" class="bg-gradient-to-r from-purple-400 to-pink-600 text-white text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 mb-2">
         <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
@@ -31,12 +32,15 @@ const { id, title, img, type } = Astro.props;
             alt={`Portada del libro ${title}`}
             class="aspect-2/4 h-full object-cover w-full max-w-full rounded"
             src={img}
+            transition:name="img-prject"
+            transition:animate="fade"
           />
+          
         </a>
-        <h2 class="text-gray-900 dark:text-white text-lg font-extrabold m-2">
+        <h2 class="text-gray-900 text-lg font-extrabold m-2">
           {title}
         </h2>
-        
       </div>
     </div>
   </div>
+  <ViewTransitions/>

@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { projects } from "../data/Projects";
 import Header_about from "../components/heade_about.astro";
+import {ViewTransitions} from 'astro:transitions';
 
 const { project } = Astro.params
 
@@ -22,6 +23,8 @@ if (!info) {
             class="h-full object-cover w-full max-w-full rounded"
             src={info.img}
             alt={`Portada del libro ${info.title}`}
+            style="transition:name:img-project"
+            transition:animate="fade"
           />
         </picture>
 
