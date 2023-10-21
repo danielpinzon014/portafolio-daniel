@@ -54,4 +54,13 @@ export const projects = [
       tec:"HTML/CSS/Ps/Ai",
       url_project:"https://www.behance.net/gallery/181888891/El-libro-2024-Banco-Davivienda"
     },
+    {
+      id:'cambios-extractos',
+      title: 'Landing cambios-extractos - DAVIVIENDA',
+      img: "public\Extractos.png",
+      description: 'This landing was a code project, i try to make a user experience simple, comfortable and intuitive, the principal propose of this landing is show to the users the new Davivienda bank statements and the differences with the previous one.',
+      type:"Code",
+      tec:"HTML/CSS",
+      url_project:"https://comunicaciones.daviviendacorredores.com/cambios-extractos"
+    },
   ]
