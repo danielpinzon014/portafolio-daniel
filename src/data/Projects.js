@@ -56,7 +56,7 @@ export const projects = [
     },
     {
       id:'cambios-extractos',
-      title: 'Landing cambios-extractos - DAVIVIENDA',
+      title: 'Landing cambios en los extractos',
       img: "https://raw.githubusercontent.com/danielpinzon014/portafolio-daniel/main/public/Extractos.png",
       description: 'This landing was a code project, i try to make a user experience simple, comfortable and intuitive, the principal propose of this landing is show to the users the new Davivienda bank statements and the differences with the previous one.',
       type:"Code",
