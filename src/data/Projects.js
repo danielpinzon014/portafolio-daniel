@@ -63,4 +63,22 @@ export const projects = [
       tec:"HTML/CSS",
       url_project:"https://comunicaciones.daviviendacorredores.com/cambios-extractos"
     },
+    {
+      id:'ONEID',
+      title: 'Landing novedades One ID',
+      img: "https://raw.githubusercontent.com/danielpinzon014/portafolio-daniel/main/public/Extractos.png",
+      description: 'This landing was a code project, i try to make a user experience simple, comfortable and intuitive, the principal propose of this landing is show a step by step with the news that One ID brings.',
+      type:"Desing",
+      tec:"Adobe XD",
+      url_project:"https://xd.adobe.com/view/89816989-8651-43d4-8304-e20735e4cf17-dcd2/?fullscreen&hints=off"
+    },
+    {
+      id:'seguro-vida',
+      title: 'Landing Seguro Vida',
+      img: "https://raw.githubusercontent.com/danielpinzon014/portafolio-daniel/main/public/Extractos.png",
+      description: 'For this project, I am provided with the design in Adobe XD, and my goal was to program the page using bootstrap, HTML, and CSS. This project involved several challenges given the amount of content and details that the website contains..',
+      type:"Code",
+      tec:"HTML/CSS",
+      url_project:"https://comunicaciones.davivienda.com/231121-Seguros-Vida"
+    },
   ]
