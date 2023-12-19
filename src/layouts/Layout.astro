@@ -1,38 +1,89 @@
 ---
-
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
-import Footer from '../components/Footer.astro';
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/danielpinzon014/portafolio-daniel/main/public/favicon-96x96.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-                <!-- Google tag (gtag.js) -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZTQ4641PP"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Web designer portfolio, with experience in ux/ui design"
+    />
+    <meta
+      name="keywords"
+      content="ux/ui design, web design, HTML, CSS, Astro, portfolio"
+    />
+    <meta name="language" content="English" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://raw.githubusercontent.com/danielpinzon014/portafolio-daniel/main/public/favicon-96x96.png"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Primary Meta Tags -->
+    <title>Daniel Pinzón</title>
+    <meta name="title" content="Daniel Pinzón" />
+    <meta
+      name="description"
+      content="Web designer portfolio, with experience in ux/ui design"
+    />
 
-                    gtag('config', 'G-SZTQ4641PP');
-                  </script>
-	</head>
-	<body class="bg-slate-50">
-		<div id="content">
-			
-			<slot />
-		</div>
-		<Footer/>
-		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-	</body>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pinzondaniel.dev/" />
+    <meta property="og:title" content="Daniel Pinzón" />
+    <meta
+      property="og:description"
+      content="Web designer portfolio, with experience in ux/ui design"
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pinzondaniel.dev/" />
+    <meta property="twitter:title" content="Daniel Pinzón" />
+    <meta
+      property="twitter:description"
+      content="Web designer portfolio, with experience in ux/ui design"
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <title>{title}</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZTQ4641PP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SZTQ4641PP");
+    </script>
+  </head>
+  <body class="bg-slate-50">
+    <div id="content">
+      <slot />
+    </div>
+    <Footer />
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"
+    ></script>
+  </body>
 </html>
