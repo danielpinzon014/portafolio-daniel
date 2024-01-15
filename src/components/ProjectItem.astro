@@ -1,6 +1,5 @@
 ---
 import { projects } from '../data/Projects';
-import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
   id:string;
@@ -14,7 +13,7 @@ const { id, title, img, type } = Astro.props;
 ---
 
   <div class="w-full h-1/2 py-4 px-4 mx-auto max-w-screen-xl lg:py-4 hover:scale-105  transition duration-700 ease-in-out">
-    <div class="grid md:grid-cols-1 gap-4">
+    <div class="grid col-span-10 gap-4">
       <div
         class="bg-gray-200 rounded-lg p-3 md:p-6 hover:bg-gray-100  shadow-lg"
       >
@@ -29,7 +28,7 @@ const { id, title, img, type } = Astro.props;
           href={`/${id}`}
         >
           <img
-            alt={`Portada del libro ${title}`}
+            alt={` ${title}`}
             class="aspect-2/4 h-full object-cover w-full max-w-full rounded"
             src={img}
             transition:name="img-prject"
@@ -43,4 +42,3 @@ const { id, title, img, type } = Astro.props;
       </div>
     </div>
   </div>
-  <ViewTransitions/>
